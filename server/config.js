@@ -1,5 +1,5 @@
 module.exports = {
-  dbDev: "mongodb://localhost:27017/main_pluoro",
+  dbDev: "mongodb://localhost:27017/spisko",
   distributionRoot: "build",
   routes: "./server/routes/",
   secret: process.env.NODE_ENV === "production" ? process.env.TOKEN_SECRET : "secret",
