@@ -1,0 +1,45 @@
+{
+  "name": "api.spisko.com",
+  "version": "1.0.0",
+  "description": "api of the spisko project",
+  "main": "app.js",
+  "pkg": {},
+  "scripts": {
+    "start": "nodemon app.js",
+    "build": "pkg app.js --target node14-linux-x64",
+    "build:raw": "rm -rf ./build/* && cp ./package.json build/ && cp ./app.js build/ && cp -r ./server build/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivulovic/api.account.pluoro.com.git"
+  },
+  "keywords": [
+    "svemir",
+    "api"
+  ],
+  "author": "Ivan Vulovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivulovic/api.account.pluoro.com/issues"
+  },
+  "homepage": "https://github.com/ivulovic/api.account.pluoro.com#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "pkg":"5.8.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "express-promise-router": "^4.1.1",
+    "ioredis": "^5.2.2",
+    "joi": "14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.0",
+    "puppeteer": "^19.5.2",
+    "rate-limiter-flexible": "^2.3.8",
+    "redis": "^4.2.0"
+  }
+}
