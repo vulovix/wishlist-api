@@ -1,1 +1,1 @@
-API of the [Pluoro](https://pluoro.com) web app
+API of the [Wishlist](https://wishlists.dev) web app
